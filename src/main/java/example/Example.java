@@ -13,7 +13,7 @@ public class Example extends SpringBootServletInitializer {
 
 	@RequestMapping("/welcome")
 	String home() {
-		return "Hello World! This is a sample spring boot application using Git, Jenkins !";
+		return "This is a demo app using spring boot with Git, Jenkins !";
 	}
 
 	public static void main(String[] args) throws Exception {
