@@ -11,7 +11,7 @@ import org.springframework.web.bind.annotation.RestController;
 @EnableAutoConfiguration
 public class Example extends SpringBootServletInitializer {
 
-	@RequestMapping("/")
+	@RequestMapping("/welcome")
 	String home() {
 		return "Hello World! This is a sample spring boot application using Git, Jenkins !";
 	}
