@@ -1,5 +1,7 @@
 package example;
 
+import java.io.FileNotFoundException;
+
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.EnableAutoConfiguration;
 import org.springframework.boot.builder.SpringApplicationBuilder;
@@ -12,7 +14,8 @@ import org.springframework.web.bind.annotation.RestController;
 public class Example extends SpringBootServletInitializer {
 
 	@RequestMapping("/welcome")
-	String home() {
+	String home() throws FileNotFoundException {
+		//XmlDecoderUtil.handleXml(new FileInputStream(""));
 		return "This is a demo app using spring boot with Git, Jenkins !";
 	}
 
