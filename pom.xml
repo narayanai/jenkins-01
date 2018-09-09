@@ -28,6 +28,25 @@
 			<artifactId>findsecbugs-plugin</artifactId>
 			<version>1.8.0</version>
 		</dependency>
+		<dependency>
+			<groupId>junit</groupId>
+			<artifactId>junit</artifactId>
+			<version>4.12</version>
+			<scope>test</scope>
+		</dependency>
+		<dependency>
+			<groupId>com.h3xstream.findsecbugs</groupId>
+			<artifactId>findsecbugs-plugin</artifactId>
+			<version>1.8.0</version>
+		</dependency>
+		<!-- https://mvnrepository.com/artifact/com.github.spotbugs/test-harness -->
+		<dependency>
+			<groupId>com.github.spotbugs</groupId>
+			<artifactId>test-harness</artifactId>
+			<version>3.1.6</version>
+			<scope>test</scope>
+		</dependency>
+
 	</dependencies>
 
 	<build>
@@ -51,7 +70,7 @@
 						<plugin>
 							<groupId>com.h3xstream.findsecbugs</groupId>
 							<artifactId>findsecbugs-plugin</artifactId>
-							<version>LATEST</version> 
+							<version>LATEST</version>
 						</plugin>
 					</plugins>
 				</configuration>
