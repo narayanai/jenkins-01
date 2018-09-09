@@ -2,6 +2,8 @@ package example;
 
 import java.beans.XMLDecoder;
 import java.io.InputStream;
+import java.security.MessageDigest;
+import java.security.NoSuchAlgorithmException;
 
 public class XmlDecoderUtil {
 	public static Object handleXml(InputStream in) {
@@ -12,5 +14,10 @@ public class XmlDecoderUtil {
 		} finally {
 			d.close();
 		}
+	}
+	public static void test(String password) throws NoSuchAlgorithmException {
+		MessageDigest md5Digest = MessageDigest.getInstance("MD5");
+	    md5Digest.update(password.getBytes());
+	    byte[] hashValue = md5Digest.digest();
 	}
 }
